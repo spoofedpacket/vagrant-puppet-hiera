@@ -5,6 +5,5 @@
     :datadir: "/hieradata"
 :hierarchy:
     - "%{::clientcert}"
-    - "%{hostgroup}"
     - "%{::environment}"
     - common
