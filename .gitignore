@@ -1,2 +1,4 @@
 .vagrant
 puppet/modules
+puppet/manifests
+puppet/hieradata

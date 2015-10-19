@@ -13,10 +13,15 @@ To use:
     ```shell
 	puppet module install thing --modulepath puppet/modules
 	```
-* Edit the puppet/default.pp manifest to include whichever modules you want:
+* Edit the puppet/manifests/default.pp manifest to include whichever modules you want:
 
     ```puppet
     class { 'thing': }
+	```
+* Create the puppet/hieradata directory:
+
+	```shell
+	mkdir puppet/hieradata
 	```
 * Create and edit puppet/hieradata/common.yaml to set common hiera data or
   puppet/hieradata/hostname-of-box.yaml for per-machine data.
